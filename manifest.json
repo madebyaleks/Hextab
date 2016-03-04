@@ -1,0 +1,23 @@
+{
+  "name": "Hexclock new tab",
+  "description": "Displays a customized version of Connor Montgomery's Hex clock in a new tab.",
+  "version": "1",
+  "manifest_version": 2,
+  "chrome_url_overrides":
+  {
+    "newtab": "theclock.html"
+  },
+  "background" : {
+    "scripts" : ["background.js"],
+    "persistent" : true
+  },
+  "icons" : {
+    "32": "icons/hextab-32px.png",
+    "64": "icons/hextab-64px.png",
+    "128": "icons/hextab-128px.png"
+  },
+  "options_page": "settings.html",
+  "web_accessible_resources": [
+    "settings.html"
+  ]
+}
