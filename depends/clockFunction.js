@@ -1,3 +1,8 @@
+function pageLoad() {
+	var fontFamily = localStorage.getItem('fontFamily');
+	$("h1").css("font-family",fontFamily);
+}
+
 function runApp()
 {
 	var x = 1;  // x = seconds
@@ -15,7 +20,6 @@ function runApp()
 	
 	//Get settings from local storage...
 	var clockStyle = localStorage.getItem('clockStyle');
-	var fontFamily = localStorage.getItem('fontFamily');
 
 	//... and apply
 	if (clockStyle === 'fancy') {
@@ -28,11 +32,11 @@ function runApp()
 
 	//Background requires pure hex
 	$("body").css("background-color",hexCode);
-	$("h1").css("font-family",fontFamily);
 
 	setTimeout(runApp, x*1000);
 }
 
+pageLoad();
 runApp(); // execute function
 
 //    For a rainy day
