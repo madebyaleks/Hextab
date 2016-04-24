@@ -1,18 +1,17 @@
 {
+  "author": "Made by Aleks",
   "name": "Hextab",
-  "description": "Ever wondered what colour the time is? Now you can find out!
-  This extensions replaces your new tab page with a minimal hexclock.",
+  "description": "Ever wondered what colour the time is? Now you can find out! This extension replaces your new tab page with a minimal hexclock.",
   "version": "1.0",
   "manifest_version": 2,
-  "chrome_url_overrides":
-  {
+  "chrome_url_overrides": {
     "newtab": "index.html"
   },
-  "background" : {
-    "scripts" : ["background.js"],
-    "persistent" : true
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
   },
-  "icons" : {
+  "icons": {
     "32": "depends/icons/hextab-32px.png",
     "48": "depends/icons/hextab-48px.png",
     "64": "depends/icons/hextab-64px.png",
