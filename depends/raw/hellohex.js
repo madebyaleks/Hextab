@@ -16,7 +16,7 @@ function setDefaults()
 {
 	localStorage.setItem('Hextab_version', '1.0');
 	localStorage.setItem('clockStyle', 'pure');
-	localStorage.setItem('clockSize', '95px');
+	localStorage.setItem('clockSize', '120px');
 	localStorage.setItem('fontFamily', 'Roboto');
 	console.log("All set. Have fun :)");
 }

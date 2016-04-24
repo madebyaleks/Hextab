@@ -62,3 +62,9 @@ article {
 h2, h3 {
 	font-family: "Aktiv Grotesk", "Helvetica Neue", Helvetica;
 }
+
+.poof {
+	display: none !important;
+	z-index: -99;
+	visibility: collapse;
+}

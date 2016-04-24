@@ -13,17 +13,6 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/clockFunction.min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/clockFunction.min.js",
-		"outputAbbreviatedPath": "\/min\/clockFunction.min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/depends\/bootstrap.min.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -44,43 +33,100 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/depends\/clockFunction.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/depends\/clockFunction.js",
-		"outputAbbreviatedPath": "\/clockFunction.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/depends\/hellohex.js": {
+	"\/depends\/clockFunction.min.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
-		"inputAbbreviatedPath": "\/depends\/hellohex.js",
-		"outputAbbreviatedPath": "\/depends\/hellohex-min.js",
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/depends\/clockFunction.min.js",
+		"outputAbbreviatedPath": "\/depends\/min\/clockFunction.min-min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1,
+		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/depends\/hexclock.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
+	"\/depends\/css\/hexclock.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/depends\/css\/hexclock.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/depends\/hellohex-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/depends\/hellohex-min.js",
+		"outputAbbreviatedPath": "\/depends\/min\/hellohex-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/depends\/hexclock.min.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/depends\/hexclock.min.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/depends\/icons\/hextab-128px.png": {
+		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/depends\/hexclock.scss",
-		"outputAbbreviatedPath": "\/hexclock.min.css",
+		"initialSize": 2135,
+		"inputAbbreviatedPath": "\/depends\/icons\/hextab-128px.png",
+		"outputAbbreviatedPath": "\/depends\/icons\/hextab-128px.png",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/depends\/icons\/hextab-32px.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 576,
+		"inputAbbreviatedPath": "\/depends\/icons\/hextab-32px.png",
+		"outputAbbreviatedPath": "\/depends\/icons\/hextab-32px.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/depends\/icons\/hextab-48px.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 959,
+		"inputAbbreviatedPath": "\/depends\/icons\/hextab-48px.png",
+		"outputAbbreviatedPath": "\/depends\/icons\/hextab-48px.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/depends\/icons\/hextab-64px.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1106,
+		"inputAbbreviatedPath": "\/depends\/icons\/hextab-64px.png",
+		"outputAbbreviatedPath": "\/depends\/icons\/hextab-64px.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/depends\/icons\/Hextab.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10602,
+		"inputAbbreviatedPath": "\/depends\/icons\/Hextab.png",
+		"outputAbbreviatedPath": "\/depends\/icons\/Hextab.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/depends\/jquery-2.min.js": {
 		"fileType": 64,
@@ -93,12 +139,50 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/depends\/options.js": {
+	"\/depends\/raw\/clockFunction.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/depends\/options.js",
-		"outputAbbreviatedPath": "\/depends\/min\/options-min.js",
+		"inputAbbreviatedPath": "\/depends\/raw\/clockFunction.js",
+		"outputAbbreviatedPath": "\/depends\/raw\/min\/clockFunction-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/depends\/raw\/hellohex.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/depends\/raw\/hellohex.js",
+		"outputAbbreviatedPath": "\/depends\/hellohex-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/depends\/raw\/hexclock.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/depends\/raw\/hexclock.scss",
+		"outputAbbreviatedPath": "\/depends\/css\/hexclock.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/depends\/raw\/options.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/depends\/raw\/options.js",
+		"outputAbbreviatedPath": "\/depends\/raw\/min\/options-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -112,70 +196,6 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
-		},
-	"\/hexclock.min.css": {
-		"fileType": 16,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/hexclock.min.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/icons\/hextab-128px.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2135,
-		"inputAbbreviatedPath": "\/icons\/hextab-128px.png",
-		"outputAbbreviatedPath": "\/icons\/hextab-128px.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 1
-		},
-	"\/icons\/hextab-32px.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 576,
-		"inputAbbreviatedPath": "\/icons\/hextab-32px.png",
-		"outputAbbreviatedPath": "\/icons\/hextab-32px.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 1
-		},
-	"\/icons\/hextab-48px.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 959,
-		"inputAbbreviatedPath": "\/icons\/hextab-48px.png",
-		"outputAbbreviatedPath": "\/icons\/hextab-48px.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/icons\/hextab-64px.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1106,
-		"inputAbbreviatedPath": "\/icons\/hextab-64px.png",
-		"outputAbbreviatedPath": "\/icons\/hextab-64px.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 1
-		},
-	"\/icons\/Hextab.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 10602,
-		"inputAbbreviatedPath": "\/icons\/Hextab.png",
-		"outputAbbreviatedPath": "\/icons\/Hextab.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
 		},
 	"\/index.html": {
 		"fileType": 8192,
@@ -205,20 +225,21 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/privacy.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/privacy.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		}
 	},
 "hooks": [
 	],
 "lastSavedByUser": "Aleksander Naug",
 "manualImportLinks": {
-	"\/depends\/clockFunction.js": [
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/depends\/jquery-2.min.js",
-			"position": 0,
-			"type": 0
-			}
-		]
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
