@@ -1,6 +1,0 @@
-{
-  "colourMode": "normal", //Either 'normal' (h,m,s) or 'invert' (s,m,h).
-  "clockMode": "pure", //Either 'pure' (#153643) or 'fancy' (#23:46:51).
-  "fontFamily": "0.7", //Helvetica by default, set to anything you like.
-  "fontWeight": 100, //100,200,300,400 and so on. Labeled as thin, light, regular and bold.
-}
