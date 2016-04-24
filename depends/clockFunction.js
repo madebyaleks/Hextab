@@ -1,6 +1,7 @@
 function pageLoad() {
 	var fontFamily = localStorage.getItem('fontFamily');
-	$("h1").css("font-family",fontFamily);
+	var clockSize = localStorage.getItem('clockSize');
+	$("h1").css({'font-family' : fontFamily, 'font-size' : clockSize});
 }
 
 function runApp()
@@ -36,8 +37,9 @@ function runApp()
 	setTimeout(runApp, x*1000);
 }
 
+// execute functions
 pageLoad();
-runApp(); // execute function
+runApp();
 
 //    For a rainy day
 //		$("span#h").text(t),

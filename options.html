@@ -28,9 +28,24 @@
 		</div>
 
 		<div class="form-group">
+			<label for="clockStyle" class="col-sm-2 control-label">Size:</label>
+			<div class="col-sm-10">
+				<select class="form-control">
+					<option value="55px">Smaller</option>
+					<option value="75px">Small</option>
+					<option value="95px" selected>Default</option>
+					<option value="120px">Big</option>
+					<option value="250px">Bigger</option>
+					<option value="350px">Gigantic</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="form-group">
 			<label for="fontFamily" class="col-sm-2 control-label">Font family</label>
 			<div class="col-sm-10">
-				<input type="text" class="form-control" id="fontFamily" placeholder="Currently Helvetica Neue">
+				<input type="text" class="form-control" id="fontFamily" pattern="[a-zæøåäöäA-ZÄÖÄÅ0-9-]+" placeholder="Default is Roboto">
+				<p>A <a target="_blank" href="https://typekit.com/fonts?classification=monospaced&number-style=uppercase&script=latin">monospaced</a> font is recomended.</p>
 			</div>
 		</div>
 		
@@ -46,7 +61,7 @@
 <article id="license">
 	<h2>License</h2>
 	<p>
-		This project is an adapted version of <a href="http://www.jacopocolo.com/">Jacopo Colòs</a> <a href="http://www.jacopocolo.com/hexclock">Hexclock</a>.
+		This project is an adapted version of <a href="http://www.jacopocolo.com/">Jacopo Colòs</a> original <a href="http://www.jacopocolo.com/hexclock">Hexclock</a>.
 	</p>
 
 	<h3>The MIT License (MIT)</h3>
@@ -65,6 +80,12 @@
 	</p>
 </article>
 
+<article id="hello">
+	<h3>A project <a href="http://madebyaleks.no">Made by Aleks</a>.</h3>
+	<p>
+		<a href="https://twitter.com/mbaleks">Twitter</a> – <a href="https://facebook.com/simmple">Facebook</a> – <a href="mailto:hello@simmple.no">Email</a>
+	</p>
+</article>
 </div>
 
 </body>

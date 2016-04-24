@@ -1,11 +1,12 @@
 {
-  "name": "Hexclock new tab",
-  "description": "Displays a customized version of Connor Montgomery's Hex clock in a new tab.",
-  "version": "1",
+  "name": "Hextab",
+  "description": "Ever wondered what colour the time is? Now you can find out!
+  This extensions replaces your new tab page with a minimal hexclock.",
+  "version": "1.0",
   "manifest_version": 2,
   "chrome_url_overrides":
   {
-    "newtab": "theclock.html"
+    "newtab": "index.html"
   },
   "background" : {
     "scripts" : ["background.js"],
@@ -18,8 +19,9 @@
     "128": "icons/hextab-128px.png",
     "512": "icons/hextab.png"
   },
-  "options_page": "settings.html",
+  "options_page": "options.html",
   "web_accessible_resources": [
-    "settings.html"
+    "options.html",
+    "hello.html"
   ]
 }

@@ -14,9 +14,10 @@ function storageAvailable(type) {
 
 function setDefaults()
 {
-	localStorage.setItem('Hextab_version', '2.0');
+	localStorage.setItem('Hextab_version', '1.0');
 	localStorage.setItem('clockStyle', 'pure');
-	localStorage.setItem('fontFamily', 'Helvetica');
+	localStorage.setItem('clockSize', '95px');
+	localStorage.setItem('fontFamily', 'Roboto');
 	console.log("All set. Have fun :)");
 }
 
@@ -25,7 +26,7 @@ if (storageAvailable('localStorage')) {
 }
 else {
 	alert("Your browser does not support localStorage, so you can't customize the clock :(");
-	console.log("Note: localStorage API either disabled or unsupported. You're stuck with the defaults bro.")
+	console.log("Note: localStorage API either disabled or unsupported. You're stuck with the defaults bro.");
 }
 
 /*function currentSettings() {

@@ -12,8 +12,8 @@ div.wall {
 	height: 100%;
 }
 
-h1, h2, h3 {
-	font-family: "Helvetica Neue", Helvetica, sans-serif;
+h1 {
+	font-family: "Roboto", "Helvetica Neue", Helvetica, sans-serif;
 }
 
 h1 {
@@ -25,11 +25,17 @@ h1 {
 	font-weight: 100;
 }
 
-h3.hello {
+h2.hello, h3.hello {
 	font-size: 35px;
-	font-weight: 500;
-	color: rgb(140,140,140);
+	line-height: 110%;
+	font-weight: 300;
+	color: rgb(200,200,200);
 	padding: 20px;
+}
+
+h3.hello {
+	font-size: 25px;
+
 }
 
 span.dim {
@@ -53,6 +59,6 @@ article {
 	margin-top: 40px;
 }
 
-h2 {
+h2, h3 {
 	font-family: "Aktiv Grotesk", "Helvetica Neue", Helvetica;
 }
