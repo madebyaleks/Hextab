@@ -35,7 +35,7 @@
 		},
 	"\/depends\/clockFunction.min.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/depends\/clockFunction.min.js",
 		"outputAbbreviatedPath": "\/depends\/min\/clockFunction.min-min.js",
@@ -53,12 +53,12 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/depends\/hellohex-min.js": {
+	"\/depends\/hellohex.min.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/depends\/hellohex-min.js",
-		"outputAbbreviatedPath": "\/depends\/min\/hellohex-min-min.js",
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/depends\/hellohex.min.js",
+		"outputAbbreviatedPath": "\/depends\/min\/hellohex.min.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -66,7 +66,7 @@
 		},
 	"\/depends\/hexclock.min.css": {
 		"fileType": 16,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/depends\/hexclock.min.css",
 		"outputAbbreviatedPath": "No Output Path",
@@ -77,23 +77,23 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 2135,
+		"initialSize": 1604,
 		"inputAbbreviatedPath": "\/depends\/icons\/hextab-128px.png",
 		"outputAbbreviatedPath": "\/depends\/icons\/hextab-128px.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/depends\/icons\/hextab-32px.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 576,
+		"initialSize": 437,
 		"inputAbbreviatedPath": "\/depends\/icons\/hextab-32px.png",
 		"outputAbbreviatedPath": "\/depends\/icons\/hextab-32px.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/depends\/icons\/hextab-48px.png": {
 		"fileType": 32768,
@@ -110,12 +110,12 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1106,
+		"initialSize": 816,
 		"inputAbbreviatedPath": "\/depends\/icons\/hextab-64px.png",
 		"outputAbbreviatedPath": "\/depends\/icons\/hextab-64px.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/depends\/icons\/Hextab.png": {
 		"fileType": 32768,
@@ -153,11 +153,11 @@
 	"\/depends\/raw\/hellohex.js": {
 		"fileType": 64,
 		"ignore": 0,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/depends\/raw\/hellohex.js",
-		"outputAbbreviatedPath": "\/depends\/hellohex-min.js",
+		"outputAbbreviatedPath": "\/depends\/raw\/min\/hellohex-min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1,
+		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
@@ -176,6 +176,17 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
+		},
+	"\/depends\/raw\/min\/hellohex-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/depends\/raw\/min\/hellohex-min.js",
+		"outputAbbreviatedPath": "\/depends\/raw\/min\/min\/hellohex-min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
 	"\/depends\/raw\/options.js": {
 		"fileType": 64,
@@ -243,8 +254,8 @@
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
-	"displayValue": "hextab",
-	"displayValueWasSetByUser": 0,
+	"displayValue": "Hextab",
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets_yellow"
 	},
 "projectSettings": {
@@ -427,7 +438,7 @@
 	"jadeCompileDebug": 1,
 	"jadeOutputStyle": 0,
 	"javascriptAutoOutputPathEnabled": 1,
-	"javascriptAutoOutputPathFilenamePattern": "*-min.js",
+	"javascriptAutoOutputPathFilenamePattern": "*.min.js",
 	"javascriptAutoOutputPathRelativePath": "\/min",
 	"javascriptAutoOutputPathReplace1": "",
 	"javascriptAutoOutputPathReplace2": "",
