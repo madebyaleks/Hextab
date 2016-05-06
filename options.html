@@ -15,8 +15,8 @@
 
 
 <div class="container-fluid">
-<article id="temp-options">
-	<h1>Options <small>alpha</small></h1>
+<!--<article id="temp-options">
+	<h1>Options <small>(ish)</small></h1>
 	<div class="row">
 		
 		<div class="col-md-4">
@@ -31,13 +31,13 @@
 
 		<div class="col-md-8">
 			<p><b>Note:</b> A more comprehensive options page is under development. As of now you can access the settings under <code>Resources > Local Storage</code> in the Chrome Inspector.</p>
-			<p>In the next release you'll be able to change font, clock size and use the <i>fancy clock</i> mode right here.</p>
+			<p>In the next release you'll be able to change font, clock size and use the <abbr title="Displays as #HH MM SS">fancy clock</abbr> mode right here.</p>
 		</div>
 
 	</div>
-</article>
+</article>-->
 
-<!-- <article id="settings" class="poof">
+<article id="settings">
 	<h1>Options</h1>
 
 	<form class="form-horizontal">
@@ -45,9 +45,9 @@
 		<div class="form-group">
 			<label for="clockStyle" class="col-sm-2 control-label">Clock style:</label>
 			<div class="col-sm-10">
-				<select class="form-control">
-					<option>Pure: #123456</option>
-					<option>Fancy: #12 34 56</option>
+				<select id="clockStyle" class="form-control">
+					<option value="pure">Pure: #123456</option>
+					<option value="fancy">Fancy: #12 34 56</option>
 				</select>
 			</div>
 		</div>
@@ -55,10 +55,10 @@
 		<div class="form-group">
 			<label for="clockStyle" class="col-sm-2 control-label">Size:</label>
 			<div class="col-sm-10">
-				<select class="form-control">
+				<select id="clockSize" class="form-control">
 					<option value="55px">Smaller</option>
 					<option value="75px">Small</option>
-					<option value="95px" selected>Default</option>
+					<option value="100px">Default</option>
 					<option value="120px">Big</option>
 					<option value="250px">Bigger</option>
 					<option value="350px">Gigantic</option>
@@ -69,19 +69,21 @@
 		<div class="form-group">
 			<label for="fontFamily" class="col-sm-2 control-label">Font family</label>
 			<div class="col-sm-10">
-				<input type="text" class="form-control" id="fontFamily" pattern="[a-zæøåäöäA-ZÄÖÄÅ0-9-]+" placeholder="Default is Roboto">
-				<p>A <a target="_blank" href="https://typekit.com/fonts?classification=monospaced&number-style=uppercase&script=latin">monospaced</a> font is recomended.</p>
+				<input type="text" class="form-control" id="fontFamily" pattern="^[a-zæøåA-ZÆØÅ0-9_ ]*$" placeholder="Default is Roboto">
+				<p>
+					A <a target="_blank" href="https://typekit.com/fonts?classification=monospaced&number-style=uppercase&script=latin">monospaced</a> font is recomended.</p>
 			</div>
 		</div>
 		
 		<div class="form-group">
 			<div class="col-sm-offset-2 col-sm-10">
-				<button type="submit" class="btn btn-default">Save settings</button>
+				<button type="submit" class="btn btn-primary" id="update"> <span class="glyphicon glyphicon-ok" id="savestate-ok"></span> <span class="glyphicon glyphicon-remove" id="savestate-error"></span> Save settings</button>
+				<button type="submit" class="btn btn-default" id="reset"> <span class="glyphicon glyphicon-ok" id="savestate-ok"></span> <span class="glyphicon glyphicon-remove" id="savestate-error"></span>Back to default</button>
 			</div>
 		</div>
 	</form>
 
-</article>-->
+</article>
 
 <article id="license">
 	<h1>License</h1>
@@ -107,8 +109,12 @@
 
 <article id="hello" class="col-md-offset-5">
 	<h4>A project <a href="http://madebyaleks.no">Made by Aleks</a>.</h4>
+	<h6>Built with jQuery, Bootstrap & SASS — Fueled by coffee</h6>
 </article>
 </div>
 
+<!-- Scripts -->
+<script src="depends/jquery-2.min.js"></script>
+<script src="depends/options.min.js"></script>
 </body>
 </html>

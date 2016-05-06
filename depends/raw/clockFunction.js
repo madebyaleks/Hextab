@@ -1,7 +1,7 @@
 function pageLoad() {
 	var fontFamily = localStorage.getItem('fontFamily');
 	var clockSize = localStorage.getItem('clockSize');
-	$("h1").css({'font-family' : fontFamily, 'font-size' : clockSize});
+	$("h1").css({'font-family' : fontFamily + ', Roboto', 'font-size' : clockSize});
 }
 
 function runApp()
