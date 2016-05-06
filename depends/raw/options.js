@@ -21,10 +21,13 @@ $('button#update').click(function() {
 	localStorage.setItem('fontFamily', new_fontFamily);
 	
 	console.log("All set. Have fun :)");
-	window.close();
+
+	$('button#update').addClass('btn-success').fadein(400);
 	//Fire Bootstrap alert
 
-});$('button#reset').click(function() {
+});
+
+$('button#reset').click(function() {
 	localStorage.setItem('clockStyle', 'pure');
 	localStorage.setItem('clockSize', '100px');
 	localStorage.setItem('fontFamily', 'Roboto');
