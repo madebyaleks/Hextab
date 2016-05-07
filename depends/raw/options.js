@@ -3,7 +3,8 @@ function readOptions() {
 	$("#clockStyle").val(localStorage.getItem('clockStyle'));
 	$("#clockSize").val(localStorage.getItem('clockSize'));
 	$("#fontFamily").val(localStorage.getItem('fontFamily'));
-
+	$("#version_num").text(localStorage.getItem('Hextab_version'));
+....
 };
 
 readOptions();
@@ -22,7 +23,7 @@ $('button#update').click(function() {
 	
 	console.log("All set. Have fun :)");
 
-	$('button#update').addClass('btn-success').fadein(400);
+	$('button#update').addClass('btn-success');
 	//Fire Bootstrap alert
 
 });
