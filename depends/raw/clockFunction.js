@@ -17,14 +17,19 @@ function runApp()
 	if (s<=9) {s = '0'+s}
 
 		var hexCode="#"+h+m+s;
-		var spaced = "#"+h+" "+m+" "+s;
+		var divided = "#"+h+":"+m+":"+s;
+		var noHex = h+" "+m+" "+s;
 	
 	//Get settings from local storage...
 	var clockStyle = localStorage.getItem('clockStyle');
 
 	//... and apply
-	if (clockStyle === 'fancy') {
-		$("h1.pure-clock").text(spaced);
+	if (clockStyle === 'divided') {
+		$("h1.pure-clock").text(divided);
+	}
+
+	else if (clockStyle === 'no-hex') {
+		$("h1.pure-clock").text(noHex);
 	}
 
 	else {

@@ -12,17 +12,17 @@ div.wall {
 	height: 100%;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
 	font-family: "Roboto", "Helvetica Neue", Helvetica, sans-serif;
+	font-weight: 100;
 }
 
-h1 {
+h1.pure-clock {
 	color: rgb(250,250,250);
 	text-align: center;
 	font-size: 90px;
 	display: block;
 	min-width: 200px;
-	font-weight: 100;
 }
 
 h2.hello, h3.hello {
@@ -60,7 +60,11 @@ article {
 }
 
 h2, h3 {
-	font-family: "Aktiv Grotesk", "Helvetica Neue", Helvetica;
+	font-family: "Roboto", "Helvetica Neue", Helvetica;
+}
+
+button.btn {
+	margin-bottom: 17px;
 }
 
 .poof {

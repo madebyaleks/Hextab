@@ -4,7 +4,6 @@ function readOptions() {
 	$("#clockSize").val(localStorage.getItem('clockSize'));
 	$("#fontFamily").val(localStorage.getItem('fontFamily'));
 	$("#version_num").text(localStorage.getItem('Hextab_version'));
-....
 };
 
 readOptions();
@@ -13,26 +12,27 @@ $('button#update').click(function() {
 	var new_clockStyle = $("#clockStyle").val();
 	var new_clockSize = $("#clockSize").val();
 	var new_fontFamily = $("#fontFamily").val();
-
-	//var new_Hextab_version = $.parseJSON('https://simmple-labs.s3.amazonaws.com/hextab/version.json');
-	//localStorage.setItem('Hextab_version', 'new_Hextab_version');
 	
 	localStorage.setItem('clockStyle', new_clockStyle);
 	localStorage.setItem('clockSize', new_clockSize);
 	localStorage.setItem('fontFamily', new_fontFamily);
+ 	
+	$('button#update').addClass('btn-success');
+	$('span#savestate-new-ok').removeClass('hidden');
 	
 	console.log("All set. Have fun :)");
-
-	$('button#update').addClass('btn-success');
-	//Fire Bootstrap alert
 
 });
 
 $('button#reset').click(function() {
+	localStorage.setItem('Hextab_version', '1.0');
 	localStorage.setItem('clockStyle', 'pure');
-	localStorage.setItem('clockSize', '100px');
-	localStorage.setItem('fontFamily', 'Roboto');
+	localStorage.setItem('clockSize', '150px');
+	localStorage.setItem('fontFamily', '');
 	
-	console.log("All set. Have fun :)");
+	$('button#reset').addClass('btn-success');
+	$('span#savestate-def-ok').removeClass('hidden');
+
+	console.log("Done. Back to basics.");
 	//Fire Bootstrap alert
 });

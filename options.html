@@ -6,39 +6,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Settings – Hextab</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="depends/hexclock.min.css">
 	<link rel="stylesheet" href="depends/bootstrap.min.css">
+	<link rel="stylesheet" href="depends/hextab.min.css">
 	<link rel="icon" type="image/png" href="depends/icons/hextab-32px.png" />
 	<link rel="apple-touch-icon-precomposed" sizes="128x128" href="depends/icons/hextab-128.png">
 </head>
 <body>
 
-
 <div class="container-fluid">
-<!--<article id="temp-options">
-	<h1>Options <small>(ish)</small></h1>
-	<div class="row">
-		
-		<div class="col-md-4">
-			<p>&nbsp;</p>
-			<p>
-				<a class="btn btn-danger btn-lg" href="hello.html">Revert to default settings</a>
-			</p>
-			<p>
-				<b>Default:</b> 120px, Roboto, pure mode
-			</p>
-		</div>
-
-		<div class="col-md-8">
-			<p><b>Note:</b> A more comprehensive options page is under development. As of now you can access the settings under <code>Resources > Local Storage</code> in the Chrome Inspector.</p>
-			<p>In the next release you'll be able to change font, clock size and use the <abbr title="Displays as #HH MM SS">fancy clock</abbr> mode right here.</p>
-		</div>
-
-	</div>
-</article>-->
 
 <article id="settings">
-	<h1>Options</h1>
+	<h1 class="text-center">Options</h1>
 
 	<div class="form-horizontal">
 		
@@ -46,8 +24,9 @@
 			<label for="clockStyle" class="col-sm-2 control-label">Clock style:</label>
 			<div class="col-sm-10">
 				<select id="clockStyle" class="form-control">
-					<option value="pure">Pure: #152359</option>
-					<option value="fancy">Fancy: #15 23 59</option>
+					<option value="pure">Original: #152359</option>
+					<option value="divided">Fancy: #15:23:59</option>
+					<option value="no-hex">Just the clock: 15:23:59</option>
 				</select>
 			</div>
 		</div>
@@ -77,8 +56,8 @@
 		
 		<div class="form-group">
 			<div class="col-sm-offset-2 col-sm-10">
-				<button type="submit" class="btn btn-primary" id="update"> <span class="glyphicon glyphicon-ok" id="savestate-ok"></span> <span class="glyphicon glyphicon-remove" id="savestate-error"></span> Save settings</button>
-				<button type="submit" class="btn btn-default" id="reset"> <span class="glyphicon glyphicon-ok" id="savestate-ok"></span> <span class="glyphicon glyphicon-remove" id="savestate-error"></span>Back to default</button>
+				<button type="submit" class="btn btn-primary col-xs-12 btn-lg" id="update"> <span class="glyphicon glyphicon-ok hidden" id="savestate-new-ok"></span> <span class="glyphicon glyphicon-remove hidden" id="savestate-new-error"></span> Save settings</button>
+				<button type="submit" class="btn btn-default col-xs-12 btn-lg" id="reset"> <span class="glyphicon glyphicon-ok hidden" id="savestate-def-ok"></span> <span class="glyphicon glyphicon-remove hidden" id="savestate-def-error"></span>Back to default</button>
 			</div>
 		</div>
 	</div>
@@ -86,7 +65,7 @@
 </article>
 
 <article id="license">
-	<h1>License</h1>
+	<h1 class="text-center">License</h1>
 	<p>
 		This project is an adapted version of <a href="http://www.jacopocolo.com/">Jacopo Colòs</a> original <a href="http://www.jacopocolo.com/hexclock">Hexclock</a>.
 	</p>
@@ -110,12 +89,12 @@
 <article id="hello">
 	<h4 class="text-center">A project <a href="http://madebyaleks.no">Made by Aleks</a>.</h4>
 	<h6 class="text-center">Built with jQuery, Bootstrap & SASS — Fueled by coffee</h6>
-	<h6 class="text-center">Hextab <span id="version_num"></span></h6>
 </article>
 </div>
 
 <!-- Scripts -->
 <script src="depends/jquery-2.min.js"></script>
+<script src="depends/bootstrap.min.js"></script>
 <script src="depends/options.min.js"></script>
 </body>
 </html>
