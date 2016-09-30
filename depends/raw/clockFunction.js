@@ -1,3 +1,7 @@
+var clockStyle = localStorage.getItem('clockStyle');
+var colourMode = localStorage.getItem('colourMode');
+var showSeconds = localStorage.getItem('showSeconds');
+
 function pageLoad() {
 	var fontFamily = localStorage.getItem('fontFamily');
 	var clockSize = localStorage.getItem('clockSize');
@@ -21,7 +25,6 @@ function runApp()
 		var noHex = h+" "+m+" "+s;
 	
 	//Get settings from local storage...
-	var clockStyle = localStorage.getItem('clockStyle');
 
 	//... and apply
 	if (clockStyle === 'divided') {
@@ -36,8 +39,14 @@ function runApp()
 		$("h1.pure-clock").text(hexCode);
 	}
 
-	//Background requires pure hex
-	$("body").css("background-color",hexCode);
+	//Background requires pure hex or rgb for colorful
+	if (colourMode === 'true') {
+		$("body").css("background-color","rgb("+h+"0,"+m+"0,"+s+"0)");
+	}
+
+	else {
+		$("body").css("background-color",hexCode);
+	}
 
 	setTimeout(runApp, x*1000);
 }
