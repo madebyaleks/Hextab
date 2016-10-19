@@ -5,7 +5,7 @@ This extension replaces your new tab page with a customizable hexclock. It, obvi
 
 ## How to install
 There are two ways to add this extension:  
-1. Visit the [extension page in Chrome Web Store](https://chrome.google.com/webstore/)  
+1. Visit the [extension page in Chrome Web Store](https://chrome.google.com/webstore/detail/hextab/empjoamnmbkhiajjchaokocjklffmnlb)  
 2. Clone this repository and manually install it in your favourite browser  
 
 ## Haven't I seen this before?
