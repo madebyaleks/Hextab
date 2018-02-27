@@ -51,6 +51,12 @@ function runApp()
 	setTimeout(runApp, x*1000);
 }
 
+/*function copyHex() {
+	$("hexcode").click().select();
+	document.execCommand('Copy');
+	console.log("Hex copied!");
+}*/
+
 // execute functions
 pageLoad();
 runApp();

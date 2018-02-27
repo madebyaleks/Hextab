@@ -13,18 +13,16 @@
 </head>
 <body>
 
-<div class="container-fluid">
-
-<article id="settings">
+<article class="container" id="settings">
 	<div class="page-header">
 		<h1 class="text-center">Options</h1>
 	</div>
+	<form>
+		<!-- Style -->
+		<div class="form-group justify-content-center">
 
-	<form class="form-horizontal">
-		
-		<div class="form-group">
-			<label for="clockStyle" class="col-sm-4 control-label">How do you like your clock?</label>
-			<div class="col-sm-8">
+			<label for="clockStyle" class="col-lg-10 col-sm-12 col-form-label">How authentic do you want your clock?</label>
+			<div class="col-md-5 col-sm-12">
 				<select id="clockStyle" class="form-control">
 					<option value="pure">Original: #152359</option>
 					<option value="divided">Fancy: #15:23:59</option>
@@ -33,74 +31,75 @@
 			</div>
 		</div>
 
-		<div class="form-group">
-			<label for="clockStyle" class="col-sm-4 control-label">Small og huge?</label>
-			<div class="col-sm-8">
+		<!-- Size -->
+		<div class="form-group justify-content-center">
+
+			<label for="clockSize" class="col-lg-10 col-sm-12 col-form-label">Tiny, huge or somewhere in between?</label>
+			<div class="col-md-5 col-sm-12">
 				<select id="clockSize" class="form-control">
-					<option value="95px">Smaller</option>
+					<option value="95px">Tiny</option>
 					<option value="125px">Small</option>
 					<option value="150px">Default</option>
 					<option value="190px">Big</option>
 					<option value="300px">Bigger</option>
-					<option value="410px">HUGE</option>
+					<option value="410px">Huge</option>
 				</select>
 			</div>
 		</div>
+		
+		<!-- Font -->
+		<div class="form-group justify-content-center">
 
-		<div class="form-group">
-			<label for="fontFamily" class="col-sm-4 control-label">What's your favourite font?</label>
-			<div class="col-sm-8">
+			<label for="fontFamily" class="col-lg-10 col-sm-12 col-form-label">What's your favourite font?</label>
+			<div class="col-md-5 col-sm-12">
 				<input type="text" class="form-control" id="fontFamily" pattern="^[a-zæøåA-ZÆØÅ0-9_ ]*$" placeholder="Default is Roboto">
 				<p>
-					A <a target="_blank" href="https://fonts.google.com/?category=Sans+Serif,Monospace">monospaced or sans serif</a> font is recomended.</p>
+					<em>A <a target="_blank" href="https://fonts.google.com/?category=Sans+Serif,Monospace">monospaced or sans serif</a> font is recomended.</em>
+				</p>
 			</div>
 		</div>
 
-		<!--<div class="form-group">
-			<label for="secondsSwitch" class="col-sm-4 control-label">Want seconds with that?</label>
-			<div class="col-sm-8">
-				<div class="btn-group" data-toggle="buttons">
-					<label class="btn btn-default">
-						<input type="radio" name="secondsToggle" id="secondsOn" value="true" autocomplete="off"> Yes
-					</label>
-					<label class="btn btn-default">
-						<input type="radio" name="secondsToggle" id="secondsOff" value="false" autocomplete="off"> Nope
-					</label>
-				</div>
-			</div>
-		</div> -->
+		<!-- Bright mode // NOTE: Ugly beta feature.
+		<div class="form-group justify-content-center">
 
-		<div class="form-group">
-			<label for="brightMode" class="col-sm-4 control-label">Into bright colours?</label>
-			<div class="col-sm-8">
-				<div class="btn-group" data-toggle="buttons">
-					<label class="btn btn-default">
-						<input type="radio" name="colourToggle" id="colourBright" value="true"> Yes
-					</label>
-					<label class="btn btn-default">
-						<input type="radio" name="colourToggle" id="colourDark" value="false"> Nope
-					</label>
+			<label for="colourToggle" class="col-lg-10 col-sm-12 col-form-label">Bright or dark colors?</label>
+			<div class="col-md-5 col-sm-12">
+
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" name="colourToggle" id="colourBright" value="true">
+					<label class="form-check-label" for="colourBright">Bright</label>
 				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" name="colourToggle" id="colourDark" value="false">
+					<label class="form-check-label" for="colourDark">Dark</label>
+				</div>
+
 			</div>
+		</div>-->
+
+		<!-- Buttons -->
+		<div class="form-group row">
+			<button type="submit" class="btn btn-success btn-lg" id="update"> <span class="glyphicon glyphicon-ok hidden" id="savestate-new-ok"></span> <span class="glyphicon glyphicon-remove hidden" id="savestate-new-error"></span> Save prefrences</button>
+			<button type="submit" class="btn btn-outline-warning btn-lg" id="reset"> <span class="glyphicon glyphicon-ok hidden" id="savestate-def-ok"></span> <span class="glyphicon glyphicon-remove hidden" id="savestate-def-error"></span>Reset everything</button>
 		</div>
-		
-		<div class="form-group">
-			<div class="col-sm-offset-3 col-sm-8">
-				<button type="submit" class="btn btn-primary col-xs-12 btn-lg" id="update"> <span class="glyphicon glyphicon-ok hidden" id="savestate-new-ok"></span> <span class="glyphicon glyphicon-remove hidden" id="savestate-new-error"></span> Save settings</button>
-				<button type="submit" class="btn btn-default col-xs-12" id="reset"> <span class="glyphicon glyphicon-ok hidden" id="savestate-def-ok"></span> <span class="glyphicon glyphicon-remove hidden" id="savestate-def-error"></span>Back to default</button>
-			</div>
-		</div>
+
+
+
 	</form>
+</div>
+
+
+
 
 </article>
 
-<article id="license">
+<article class="container" id="license">
 	<h1 class="text-center">License</h1>
 	<p>
-		This project is a heavily adapted version of <a href="http://www.jacopocolo.com/">Jacopo Colòs</a> original <a href="http://www.jacopocolo.com/hexclock">Hexclock</a>.
+		This project is a heavily adapted version of Jacopo Colòs' original <a href="http://www.jacopocolo.com/hexclock">Hexclock</a>.
 	</p>
 
-	<h2>The MIT License (MIT)</h2>
+	<h3>The MIT License (MIT)</h3>
 	<p>Copyright (c) 2014 Jacopo Colò</p>
 
 	<p>
@@ -116,10 +115,10 @@
 	</p>
 </article>
 
-<article id="hello">
-	<h4 class="text-center">A project <a href="https://madebyaleks.no">Made by Aleks</a>.</h4>
+<footer>
+	<h5 class="text-center">A project <a href="https://madebyaleks.no">Made by Aleks</a>.</h5>
 	<h6 class="text-center">Built with jQuery, Bootstrap & SASS — Fueled by coffee</h6>
-</article>
+</footer>
 </div>
 
 <!-- Scripts -->

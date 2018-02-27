@@ -23,6 +23,10 @@ h1.pure-clock {
 	font-size: 90px;
 	display: block;
 	min-width: 200px;
+
+	&:hover {
+		cursor: hand;
+	}
 }
 
 h2.hello, h3.hello {
@@ -63,12 +67,27 @@ h2, h3 {
 	font-family: "Roboto", "Helvetica Neue", Helvetica;
 }
 
-button.btn {
+button {
 	margin-bottom: 17px;
+	margin-left: 27px;
 }
 
 .poof {
 	display: none !important;
 	z-index: -99;
 	visibility: collapse;
+}
+
+@mixin flexy($dir: column, $wrap: wrap, $justify: center, $align-c: center, $align-i: center){
+	display: flex;
+	flex-direction: $dir;
+	flex-wrap: $wrap;
+	justify-content: $justify;
+	align-content: $align-c;
+	align-items: $align-i;
+}
+
+// Helper classes
+.flexy{
+	@include flexy;
 }
