@@ -1,0 +1,40 @@
+html body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s; }
+
+.poof {
+  display: none !important;
+  z-index: -99;
+  visibility: collapse; }
+
+.flexy {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center; }
+
+.t-white {
+  color: #fafafa; }
+
+span.dim {
+  color: rgba(255, 255, 255, 0.1); }
+
+.clock {
+  cursor: hand;
+  display: block;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 100; }
+
+.cc {
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -19px;
+  transform: translate(-50%, -50%); }

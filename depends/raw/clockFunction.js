@@ -1,6 +1,6 @@
 var clockStyle = localStorage.getItem('clockStyle');
 var colourMode = localStorage.getItem('colourMode');
-var showSeconds = localStorage.getItem('showSeconds');
+// var showSeconds = localStorage.getItem('showSeconds');
 
 function pageLoad() {
 	var fontFamily = localStorage.getItem('fontFamily');
@@ -15,7 +15,7 @@ function runApp()
 	var h = d.getHours();
 	var m = d.getMinutes();
 	var s = d.getSeconds();
-	
+
 	if (h<=9) {h = '0'+h}
 	if (m<=9) {m = '0'+m}
 	if (s<=9) {s = '0'+s}
@@ -23,21 +23,23 @@ function runApp()
 		var hexCode="#"+h+m+s;
 		var divided = "#"+h+":"+m+":"+s;
 		var noHex = h+" "+m+" "+s;
-	
+
 	//Get settings from local storage...
 
 	//... and apply
-	if (clockStyle === 'divided') {
-		$("h1.pure-clock").text(divided);
+	switch (clockStyle) {
+		case clockStyle = 'divided':
+			$("h1.clock").text(divided);
+			break;
+
+		case clockStyle = 'no-hex':
+			$("h1.clock").text(noHex);
+			break;
+
+		default:
+		$("h1.clock").text(hexCode);
 	}
 
-	else if (clockStyle === 'no-hex') {
-		$("h1.pure-clock").text(noHex);
-	}
-
-	else {
-		$("h1.pure-clock").text(hexCode);
-	}
 
 	//Background requires pure hex or rgb for colorful
 	if (colourMode === 'true') {
@@ -49,19 +51,24 @@ function runApp()
 	}
 
 	setTimeout(runApp, x*1000);
+
+
+// End op App
 }
 
-/*function copyHex() {
-	$("hexcode").click().select();
-	document.execCommand('Copy');
-	console.log("Hex copied!");
-}*/
 
 // execute functions
 pageLoad();
 runApp();
 
-//    For a rainy day
-//		$("span#h").text(t),
-//		$("span#m").text(s),
-//		$("span#s").text(n),
+/*    For a rainy day
+
+function copyHex() {
+	navigator.clipboard.write("hexCode").then(function() {
+		console.log('Hex code copied!');
+	}, function(err) {
+		console.error('Hextab: Could not copy text: ', err);
+	});
+};
+
+*/
