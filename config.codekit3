@@ -26,6 +26,238 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"/CWS/background.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/depends/background.min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/CWS/depends/bootstrap.min.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/depends/bootstrap.min.min.min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/CWS/depends/clockFunction.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/depends/clockFunction.min.min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/CWS/depends/hextab-fp.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/CWS/depends/hextab-fp.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/CWS/depends/hextab.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/CWS/depends/hextab.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/CWS/depends/icons/hextab-128px.png": {
+		"ft": 32768,
+		"iS": 1604,
+		"oA": 0,
+		"oAP": "/CWS/depends/icons/hextab-128px.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/CWS/depends/icons/hextab-32px.png": {
+		"ft": 32768,
+		"iS": 437,
+		"oA": 0,
+		"oAP": "/CWS/depends/icons/hextab-32px.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/CWS/depends/icons/hextab-48px.png": {
+		"ft": 32768,
+		"iS": 959,
+		"oA": 0,
+		"oAP": "/CWS/depends/icons/hextab-48px.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/CWS/depends/icons/hextab-64px.png": {
+		"ft": 32768,
+		"iS": 816,
+		"oA": 0,
+		"oAP": "/CWS/depends/icons/hextab-64px.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/CWS/depends/icons/Hextab.png": {
+		"ft": 32768,
+		"iS": 10602,
+		"oA": 0,
+		"oAP": "/CWS/depends/icons/Hextab.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/CWS/depends/icons/settings.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/CWS/depends/icons/settings.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/CWS/depends/options.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/depends/options.min.min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/CWS/depends/third-party/bootstrap-notify.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/depends/bootstrap-notify.min.min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/CWS/depends/third-party/bootstrap.bundle.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/depends/bootstrap.bundle.min.min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/CWS/depends/third-party/bootstrap.bundle.min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/CWS/depends/third-party/bootstrap.bundle.min.js.map",
+		"oF": 0
+		},
+	"/CWS/depends/third-party/bootstrap.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/CWS/depends/third-party/bootstrap.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/CWS/depends/third-party/bootstrap.min.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/CWS/depends/third-party/bootstrap.min.css.map",
+		"oF": 0
+		},
+	"/CWS/depends/third-party/bootstrap.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/depends/bootstrap.min.min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/CWS/depends/third-party/bootstrap.min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/CWS/depends/third-party/bootstrap.min.js.map",
+		"oF": 0
+		},
+	"/CWS/depends/third-party/jquery-3.3.1.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/depends/jquery-3.3.1.min.min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/CWS/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/CWS/index.html",
+		"oF": 0
+		},
+	"/CWS/license.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/CWS/license.html",
+		"oF": 0
+		},
+	"/CWS/manifest.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/CWS/manifest-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/CWS/options.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/CWS/options.html",
+		"oF": 0
+		},
+	"/CWS/privacy.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/CWS/privacy.html",
+		"oF": 0
+		},
 	"/depends/bootstrap.min.min.js": {
 		"ft": 64,
 		"ma": 0,
@@ -341,13 +573,6 @@
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
-		},
-	"/options-old.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/options-old.html",
-		"oF": 0
 		},
 	"/options.html": {
 		"cB": 0,
