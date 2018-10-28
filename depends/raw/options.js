@@ -1,43 +1,52 @@
-var options = ["clockStyle", "clockSize", "fontFamily", "displaySeconds", "colourMode"];
+
+$.notifyDefaults({
+	type: 'success',
+	delay: '2000',
+	placement: {
+		align: "center"
+	},
+});
+
 function readOptions() {
 
-	$("#clockStyle").val(localStorage.getItem('clockStyle'));
-	$("#clockSize").val(localStorage.getItem('clockSize'));
-	$("#fontFamily").val(localStorage.getItem('fontFamily'));
-	//var secondsSwitch = $("#secondsSwitch").val(localStorage.getItem('displaySeconds'));
-	//var colourSwitch = localStorage.getItem('colourMode');
-	//$("#version_num").text(localStorage.getItem('Hextab_version'));
-};
+	var firstRun = localStorage.getItem('firstRun');
+
+ if (firstRun !== null) {
+
+	 $("#clockStyle").val(localStorage.getItem('clockStyle'));
+	 $("#clockSize").val(localStorage.getItem('clockSize'));
+	 $("#clockFont").attr("placeholder", localStorage.getItem('clockFont'));
+
+ } else {
+	 localStorage.setItem('clockStyle', 'hex');
+	 localStorage.setItem('clockSize', '19em');
+	 localStorage.setItem('clockFont', 'Roboto');
+	 localStorage.setItem('firstRun', 'false');
+	 $("#clockStyle").val('hex');
+	 $("#clockSize").val('11em');
+	 $("#clockFont").attr("placeholder", "Roboto");
+ }
+}
 
 readOptions();
 
-$('button#update').click(function() {
+$('button#btn-save').click(function() {
 	var new_clockStyle = $("#clockStyle").val();
 	var new_clockSize = $("#clockSize").val();
-	var new_fontFamily = $("#fontFamily").val();
-	var new_displaySeconds = $("input[name=secondsToggle]:checked").val()
+	var new_clockFont = $("#clockFont").val();
 
 	localStorage.setItem('clockStyle', new_clockStyle);
 	localStorage.setItem('clockSize', new_clockSize);
-	localStorage.setItem('fontFamily', new_fontFamily);
-	localStorage.setItem('showSeconds', new_displaySeconds);
+	localStorage.setItem('clockFont', new_clockFont);
 
-	$('button#update').addClass('btn-success');
-	$('span#savestate-new-ok').removeClass('hidden');
-
-	console.log("All set. Have fun :)");
+	$.notify('<strong>Gotcha!</strong> We saved your preferences');
 
 });
 
-$('button#reset').click(function() {
-	localStorage.setItem('clockStyle', 'pure');
-	localStorage.setItem('clockSize', '150px');
-	localStorage.setItem('fontFamily', 'Roboto');
-	localStorage.setItem('displaySeconds', true);
+$('button#btn-reset').click(function() {
+	localStorage.setItem('clockStyle', 'hex');
+	localStorage.setItem('clockSize', '11em');
+	localStorage.setItem('clockFont', 'Roboto');
 
-	$('button#reset').addClass('btn-success');
-	$('span#savestate-def-ok').removeClass('hidden');
-
-	console.log("Done. Back to basics.");
-	//Fire Bootstrap alert
+	$.notify('<strong>Done!</strong> Default it is.');
 });

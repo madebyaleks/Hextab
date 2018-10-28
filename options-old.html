@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Settings – Hextab</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="depends/third-party/bootstrap.min.css">
+	<link rel="stylesheet" href="depends/hextab.min.css">
+	<link rel="icon" type="image/png" href="depends/icons/hextab-32px.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="128x128" href="depends/icons/hextab-128.png">
+</head>
+<body>
+
+<article class="container" id="settings">
+	<div class="page-header">
+		<h1 class="text-center">Options</h1>
+	</div>
+	<form>
+		<!-- Style -->
+		<div class="form-group justify-content-center">
+
+			<label for="clockStyle" class="col-lg-10 col-sm-12 col-form-label">How authentic do you want your clock?</label>
+			<div class="col-md-5 col-sm-12">
+				<select id="clockStyle" class="form-control">
+					<option value="pure">Hex code: #152359</option>
+					<option value="divided">Fancy: #15:23:59</option>
+					<option value="no-hex">Just the clock: 15 23 59</option>
+				</select>
+			</div>
+		</div>
+
+		<!-- Size -->
+		<div class="form-group justify-content-center">
+
+			<label for="clockSize" class="col-lg-10 col-sm-12 col-form-label">Tiny, huge or somewhere in between?</label>
+			<div class="col-md-5 col-sm-12">
+				<select id="clockSize" class="form-control">
+					<option value="95px">Tiny</option>
+					<option value="125px">Small</option>
+					<option value="150px">Default</option>
+					<option value="190px">Big</option>
+					<option value="300px">Bigger</option>
+					<option value="410px">Huge</option>
+				</select>
+			</div>
+		</div>
+
+		<!-- Font -->
+		<div class="form-group justify-content-center">
+
+			<label for="fontFamily" class="col-lg-10 col-sm-12 col-form-label">What's your favourite font?</label>
+			<div class="col-md-5 col-sm-12">
+				<input type="text" class="form-control" id="fontFamily" pattern="^[a-zæøåA-ZÆØÅ0-9_ ]*$" placeholder="Default is Roboto">
+				<p>
+					<em>A <a target="_blank" href="https://fonts.google.com/?category=Sans+Serif,Monospace">monospaced or sans serif</a> font is recomended.</em>
+				</p>
+			</div>
+		</div>
+
+		 Bright mode // NOTE: Ugly beta feature.
+		<div class="form-group justify-content-center">
+
+			<label for="colourToggle" class="col-lg-10 col-sm-12 col-form-label">Bright or dark colors?</label>
+			<div class="col-md-5 col-sm-12">
+
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" name="colourToggle" id="colourBright" value="true">
+					<label class="form-check-label" for="colourBright">Bright</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" name="colourToggle" id="colourDark" value="false">
+					<label class="form-check-label" for="colourDark">Dark</label>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Buttons -->
+		<div class="form-group row">
+			<button type="submit" class="btn btn-success btn-lg" id="update"> <span class="glyphicon glyphicon-ok hidden" id="savestate-new-ok"></span> <span class="glyphicon glyphicon-remove hidden" id="savestate-new-error"></span> Save prefrences</button>
+			<button type="submit" class="btn btn-outline-warning btn-lg" id="reset"> <span class="glyphicon glyphicon-ok hidden" id="savestate-def-ok"></span> <span class="glyphicon glyphicon-remove hidden" id="savestate-def-error"></span>Reset everything</button>
+		</div>
+
+
+
+	</form>
+</div>
+
+
+
+
+</article>
+
+<article class="container" id="license">
+	<h1 class="text-center">License</h1>
+	<p>
+		This project is a heavily adapted version of Jacopo Colòs' original <a href="http://www.jacopocolo.com/hexclock">Hexclock</a>.
+	</p>
+
+	<h3>The MIT License (MIT)</h3>
+	<p>Copyright (c) 2014 Jacopo Colò</p>
+
+	<p>
+		Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+	</p>
+
+	<p>
+		<strong>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</strong>
+	</p>
+
+	<p>
+		THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+	</p>
+</article>
+
+<footer>
+	<p class="text-center">
+		<span class="footer-big">A project <a href="https://madebyaleks.no">Made by Aleks</a>.</span> <br>
+		<span class="footer-sub">Built with jQuery, Bootstrap, SASS & CodeKit — Fueled by coffee</span> <br>
+		<span class="footer-sub"> <a href="/license.html">License</a> </span>
+	</p>
+</footer>
+</div>
+
+<!-- Scripts -->
+<script src="depends/third-party/jquery-3.3.1.min.js"></script>
+<script src="depends/third-party/bootstrap.min.js"></script>
+<script src="depends/options.min.js"></script>
+</body>
+</html>

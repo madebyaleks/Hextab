@@ -1,11 +1,9 @@
-var clockStyle = localStorage.getItem('clockStyle');
-var colourMode = localStorage.getItem('colourMode');
-// var showSeconds = localStorage.getItem('showSeconds');
 
+var clockStyle = localStorage.getItem('clockStyle');
 function pageLoad() {
-	var fontFamily = localStorage.getItem('fontFamily');
+	var clockFont = localStorage.getItem('clockFont');
 	var clockSize = localStorage.getItem('clockSize');
-	$("h1").css({'font-family' : fontFamily + ', Roboto', 'font-size' : clockSize});
+	$("h1").css({'font-family' : clockFont + ', Roboto', 'font-size' : clockSize});
 }
 
 function runApp()
@@ -28,27 +26,23 @@ function runApp()
 
 	//... and apply
 	switch (clockStyle) {
-		case clockStyle = 'divided':
+		case clockStyle = 'styled':
 			$("h1.clock").text(divided);
 			break;
 
-		case clockStyle = 'no-hex':
+		case clockStyle = 'clean':
 			$("h1.clock").text(noHex);
+			break;
+
+		case clockStyle = 'hex':
+			$("h1.clock").text("#"+h+m+s);
 			break;
 
 		default:
 		$("h1.clock").text(hexCode);
 	}
 
-
-	//Background requires pure hex or rgb for colorful
-	if (colourMode === 'true') {
-		$("body").css("background-color","rgb("+h+"0,"+m+"0,"+s+"0)");
-	}
-
-	else {
-		$("body").css("background-color",hexCode);
-	}
+	$("body").css("background-color","#"+h+m+s);
 
 	setTimeout(runApp, x*1000);
 

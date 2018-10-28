@@ -26,6 +26,16 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"/depends/bootstrap.min.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/depends/bootstrap.min.min.min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"/depends/clockFunction.min.js": {
 		"ft": 64,
 		"ma": 0,
@@ -33,16 +43,6 @@
 		"oA": 1,
 		"oAP": "/depends/clockFunction.min.min.js",
 		"oF": 3,
-		"sC": 1,
-		"tS": 0
-		},
-	"/depends/clockFunction.min.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/depends/clockFunction.min.min.min.js",
-		"oF": 0,
 		"sC": 1,
 		"tS": 0
 		},
@@ -138,6 +138,16 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/depends/icons/settings.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/depends/icons/settings.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/depends/options.min.js": {
 		"ft": 64,
 		"ma": 0,
@@ -231,6 +241,33 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"/depends/third-party/bootstrap-notify.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/depends/bootstrap-notify.min.min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/depends/third-party/bootstrap.bundle.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/depends/bootstrap.bundle.min.min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/depends/third-party/bootstrap.bundle.min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/depends/third-party/bootstrap.bundle.min.js.map",
+		"oF": 0
+		},
 	"/depends/third-party/bootstrap.min.css": {
 		"aP": 1,
 		"bl": 0,
@@ -283,18 +320,18 @@
 		"oO": 0,
 		"oS": 1
 		},
-	"/hello.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/hello.html",
-		"oF": 0
-		},
 	"/index.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/index.html",
+		"oF": 0
+		},
+	"/license.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/license.html",
 		"oF": 0
 		},
 	"/manifest.json": {
@@ -305,11 +342,11 @@
 		"oO": 0,
 		"oS": 1
 		},
-	"/options-2.html": {
+	"/options-old.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/options-2.html",
+		"oAP": "/options-old.html",
 		"oF": 0
 		},
 	"/options.html": {
